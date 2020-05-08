@@ -32,7 +32,7 @@ public class CheckoutTest extends BasePage{
 	}
 
 	@Test(priority=2, dependsOnMethods="verifyRemovingFromCart")
-	public void verifyReaddingItemToCart() {
+	public void verifyReadingItemToCart() {
 		CartPage cartsPage = new CartPage(driver);
 		cartsPage.addItemToCartAgain();
 		logger.log(LogStatus.INFO, "Readding an item to cart");
