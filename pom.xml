@@ -18,8 +18,6 @@
 	</properties>
 
 	<dependencies>
-
-
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -63,8 +61,8 @@
 			<version>2.5</version>
 		</dependency>
 	</dependencies>
-	
-		<build>
+
+	<build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
 			<plugins>
