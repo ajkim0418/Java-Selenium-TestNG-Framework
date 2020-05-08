@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Test Suite">
+	<listeners>
+		<listener class-name="util.ExtentReportListener" />
+	</listeners>
+	<test name="Smoke Test">
+		<parameter name="username" value="juntestuser@yahoo.com" />
+		<parameter name="password" value="testing123" />
+		<classes>
+			<class name="tests.CheckoutTest" />
+		</classes>
+	</test>
+
+</suite>
