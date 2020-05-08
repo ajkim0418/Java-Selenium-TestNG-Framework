@@ -32,12 +32,13 @@
 			<version>7.1.0</version>
 			<scope>compile</scope>
 		</dependency>
+
 		<!-- WebDriverManager -->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>3.6.0</version>
-			<scope>test</scope>
+			<version>3.8.1</version>
+			<scope>compile</scope>
 		</dependency>
 
 		<!-- SLF4j bridge to prevent slfj error message -->
