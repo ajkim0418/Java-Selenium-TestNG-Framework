@@ -6,9 +6,12 @@
 		<listener class-name="util.ExtentReportListener" />
 	</listeners>
 	<test name="Smoke Test">
-		<parameter name="username" value="juntestuser@yahoo.com" />
-		<parameter name="password" value="testing123" />
+		<parameter name="username" value="ValidUsername" />
+		<parameter name="password" value="ValidPassword" />
 		<classes>
+			<class name="tests.HomePageTest" />
+			<class name="tests.LoginPageTest" />
+			<class name="tests.ForumsPageTest" />
 			<class name="tests.CheckoutTest" />
 		</classes>
 	</test>
