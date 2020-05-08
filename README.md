@@ -14,8 +14,8 @@ Automating functional and end to end UI tests for www.oculus.com website. This p
 - Maven configuration
 - Chrome version 80+
 
-# Easy way to configure Maven (Mac)
-1. Download Maven (tar.gz for mac): https://maven.apache.org/download.cgi
+## Easy way to configure Maven (Mac)
+1. Download Maven (tar.gz for mac) from [here](https://maven.apache.org/download.cgi)
 2. Move the downloaded apache-maven-3.6.3 folder to User directory
 In terminal:
 
@@ -36,5 +36,19 @@ touch .bash_profile
 open .bash_profile
 ```
 5. Paste the two paths from step 1 and 2
-6. Save and exit
+6. Save and close
 7. Now Maven will be installed for all sessions. Type mvn --version to verify Maven is installed
+
+## How to run Selenium tests
+In terminal:
+```
+git clone https://github.com/ajkim0418/Java-Selenium-TestNG-Framework.git
+```
+Change directory to the location of cloned project folder and run Maven clean
+```
+mvn clean
+```
+To run the test
+```
+mvn test
+```
