@@ -13,9 +13,10 @@ Automating functional and end to end UI tests for www.oculus.com website. This p
 - JDK (version 7 or 8)
 - Maven configuration
 
-## Easy way to configure Maven (Mac)
+### Easy way to configure Maven (Mac)
 <details>
   <summary>Click to view instructions</summary> 
+  
 1. Download Maven (tar.gz for mac) from [here](https://maven.apache.org/download.cgi)
 2. Move the downloaded apache-maven-3.6.3 folder to User directory
 
