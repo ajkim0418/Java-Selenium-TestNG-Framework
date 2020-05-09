@@ -14,6 +14,9 @@ Automating functional and end to end UI tests for www.oculus.com website. This p
 - Maven configuration
 
 ## Easy way to configure Maven (Mac)
+<details>
+  <summary>Click to view instructions</summary> 
+  
 1. Download Maven (tar.gz for mac) from [here](https://maven.apache.org/download.cgi)
 2. Move the downloaded apache-maven-3.6.3 folder to User directory
 
@@ -38,6 +41,7 @@ open .bash_profile
 5. Paste the two paths from step 1 and 2
 6. Save and close
 7. Now Maven will be installed for all sessions. Type mvn --version to verify Maven is installed
+</details>
 
 ## How to run Selenium tests
 In terminal:
