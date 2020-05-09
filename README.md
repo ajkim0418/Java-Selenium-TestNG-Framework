@@ -46,7 +46,7 @@ mvn --version
 ```
 </details>
 
-## How to run Selenium tests
+## How to run tests
 In terminal:
 ```
 git clone https://github.com/ajkim0418/Java-Selenium-TestNG-Framework.git
