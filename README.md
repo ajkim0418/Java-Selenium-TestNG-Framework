@@ -12,11 +12,11 @@ Automating functional and end to end UI tests for www.oculus.com website. This p
 - IDE (Eclipse)
 - JDK (version 7 or 8)
 - Maven configuration
-- Chrome version 80+
 
 ## Easy way to configure Maven (Mac)
 1. Download Maven (tar.gz for mac) from [here](https://maven.apache.org/download.cgi)
 2. Move the downloaded apache-maven-3.6.3 folder to User directory
+
 In terminal:
 
 1. Set system variables:
@@ -52,6 +52,7 @@ To run the test
 ```
 mvn test
 ```
+###### Note: For the verifyLogin test case to pass, you must edit the SmokeTestSuite.xml and change the values for parameter "username" and "password" to a registered username/password
 
 ## Project components
 - Page objects are in the directory src/main/java/pages
@@ -60,9 +61,8 @@ mvn test
 
 ## Highlights
 - This framework supports Chrome and Firefox browsers 
-- This uses **WebDriverManager**, an open source browser binary manager. Selenium WebDriver requires you to download the binaries for each driver and hardcode the path of the driver. The disadvantage of this is each user must change the code to match their path, and they must manually check when new versions of the binaries are released. WebDriverManager automatically checks the latest version of the browser downloaded on your machine and downloads the required driver binary into the cache, eliminating the need to manually download and store binary files. 
+- This uses **WebDriverManager**, an open source browser binary manager. Selenium WebDriver requires you to download the binaries for each driver and hardcode the path of the driver. The disadvantage of this is each user must change the code to match their path, and they must manually check when new versions of the binaries are released. WebDriverManager automatically checks the latest version of the browser downloaded on your machine and downloads the required driver binary into the cache, eliminating the need to manually download and store binary files.
+- Screenshot on test failure: A screenshot of the active browser is captured and stored in the screenshots folder
 - Extent reporting and logging: After the test finishes, a visual report is generated for all the executed test cases from the suite. This report can be found in the 'report' folder
 ![TestResult](https://user-images.githubusercontent.com/64181697/81464435-aba35d00-9176-11ea-9859-d97d9aa1aed3.png)
 <img width="1168" alt="Screen Shot 2020-05-08 at 9 56 41 PM" src="https://user-images.githubusercontent.com/64181697/81464457-d5f51a80-9176-11ea-8460-694660fc7904.png">
-
-- Screenshot on test failure: A screenshot of the active browser is captured and stored in the screenshots folder
