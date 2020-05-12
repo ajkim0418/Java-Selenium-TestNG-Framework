@@ -72,10 +72,6 @@ public class HomePage {
 		
 	}
 	
-	public List<WebElement> getNavigationLinks() {
-		return driver.findElement(navigationLinks).findElements(containers);
-	}
-	
 	public List<WebElement> headsetsDropdownResults(){
 		return driver.findElement(headsetsDropdown).findElements(headsetsDropdownResults);
 	}
