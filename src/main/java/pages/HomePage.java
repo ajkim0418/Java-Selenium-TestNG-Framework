@@ -88,8 +88,7 @@ public class HomePage {
 	}
 	
 	public boolean isCartPageLoaded() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(checkoutButton));
-		return driver.findElement(checkoutButton).isDisplayed();
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(checkoutButton)).isDisplayed();
 	}
 	
 }

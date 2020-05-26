@@ -28,8 +28,7 @@ public class ForumsPage {
 	}
 
 	public boolean isForumsHeaderPresent() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(forumsHeader));
-		return driver.findElement(forumsHeader).isDisplayed();
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(forumsHeader)).isDisplayed();
 	}
 	
 	public List<WebElement> getPagination(){
@@ -37,8 +36,7 @@ public class ForumsPage {
 	}
 
 	public boolean isNextPageSuccessful() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(newResults));
-		return driver.findElement(newResults).isDisplayed();
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(newResults)).isDisplayed();
 	}
 	
 	public void searchForum(String text) {
@@ -50,7 +48,6 @@ public class ForumsPage {
 	}
 	
 	public boolean isSearchSuccessful() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(forumsSearchResults));
-		return driver.findElement(forumsSearchResults).isDisplayed();
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(forumsSearchResults)).isDisplayed();
 	}
 }

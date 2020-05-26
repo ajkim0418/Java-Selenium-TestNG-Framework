@@ -54,8 +54,7 @@ public class CheckoutPage {
 	}
 	
 	public void selectState(String state) {
-		Select stateDropdown = new Select(driver.findElement(stateProvinceDropdown));
-		stateDropdown.selectByValue(state);
+		new Select(driver.findElement(stateProvinceDropdown)).selectByValue(state);
 	}
 	
 	public void enterZipcode(String zipcode) {
@@ -71,13 +70,13 @@ public class CheckoutPage {
 	public void refresh() {
 		driver.navigate().refresh();
 	}
+	
 	public boolean isErrorContainerDisplayed() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(errorContainer));
-		return driver.findElement(errorContainer).isEnabled();
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(errorContainer)).isDisplayed();
 	} 
+	
 	public boolean isContinueButtonEnabled() {
-		wait.until(ExpectedConditions.elementToBeClickable(continueToPaymentButton));
-		return driver.findElement(continueToPaymentButton).isEnabled();
+		return wait.until(ExpectedConditions.elementToBeClickable(continueToPaymentButton)).isDisplayed();
 	}
 	
 	

@@ -18,7 +18,7 @@ public class LoginPage {
 	
 	public LoginPage(WebDriver driver) { // create a constructor and pass the driver instance
 		this.driver=driver; 
-		wait = new WebDriverWait(driver, 5);
+		wait = new WebDriverWait(driver, 10);
 	}
 	
 	public void typeUsername(String username) { //pass a parameter so we don't hardcode values in the object class.
@@ -36,8 +36,7 @@ public class LoginPage {
 	}
 	
 	public boolean errorContainerDisplayed() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(errorContainer));
-		return driver.findElement(errorContainer).isDisplayed();
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(errorContainer)).isDisplayed();
 	}
 	
 	public boolean verifyNewPage() {

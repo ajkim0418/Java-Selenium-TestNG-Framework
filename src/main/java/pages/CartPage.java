@@ -29,8 +29,7 @@ public class CartPage {
 	}
 
 	public boolean isItemRemoved() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(emptyCartMessage));
-		return driver.findElement(emptyCartMessage).isDisplayed();
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(emptyCartMessage)).isDisplayed();
 	}
 
 	public void addItemToCartAgain() {
@@ -38,13 +37,11 @@ public class CartPage {
 	}
 
 	public boolean isItemAdded() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(productDetails));
-		return driver.findElement(productDetails).isDisplayed();
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(productDetails)).isDisplayed();
 	}
 
 	public void selectCountry(String country) {
-		Select countryList = new Select(driver.findElement(shippingCountryDropdown));
-		countryList.selectByValue(country);
+		new Select(driver.findElement(shippingCountryDropdown)).selectByValue(country);
 		wait.until(ExpectedConditions.attributeToBe(shippingCountryDropdown, "value", country));
 	}
 
