@@ -18,7 +18,7 @@ Automating functional UI and end to end tests for www.oculus.com website. This p
   <summary>Click to view instructions</summary> 
   
 1. Download Maven (tar.gz for mac) from [here](https://maven.apache.org/download.cgi)
-2. Move the downloaded apache-maven-3.6.3 folder to User directory
+2. Move the downloaded apache-maven-3.6.3 folder to your Home directory (This is the folder with your username)
 
 In terminal:
 
