@@ -34,13 +34,13 @@ export PATH=$PATH:/Users/<YOUR USER NAME>/apache-maven-3.6.3/bin/
 ```
 touch .bash_profile
 ```
-4. If you do have one, or after creating one, open the bash profile to edit:
+  If you do have one, or after creating one, open the bash profile to edit:
 ```
 open .bash_profile
 ```
-5. Paste the two paths from step 1 and 2
-6. Save and close
-7. Now Maven will be installed for all sessions. To verify Maven is installed, type:
+4. Paste the two paths from step 1 and 2
+5. Save and close
+6. Now Maven will be installed for all sessions. To verify Maven is installed, type:
 ```
 mvn --version
 ```
